@@ -87,7 +87,7 @@ def plot_one_line(x, y, y_errorbar=None, figsize=(15, 9), x_label='', y_label=''
             fig['ax2'].set_ylabel(y2_label, fontsize=label_font_size)
             fig['ax2'].tick_params(axis='both', which='major', labelsize=ticks_font_size)
             fig['ax2'].tick_params(direction='inout', pad=pad)
-            [i.set_linewidth(border_thickness) for i in fig['ax2'].spines.itervalues()]
+            [i.set_linewidth(border_thickness) for i in fig['ax2'].spines.values()]
             fig['ax2'].tick_params('both', direction="in", length=ticks_length, width=ticks_width, which='major')
             if y2labelpad:
                 fig['ax2'].yaxis.labelpad = y2labelpad
@@ -145,7 +145,7 @@ def plot_one_scatter(x, y, err_x=None, err_y=None, figsize=(15, 9), x_label='', 
         fig['ax'].tick_params(axis='both', which='major', labelsize=ticks_font_size)
         fig['ax'].tick_params(direction='inout', pad=pad)
 
-        [i.set_linewidth(border_thickness) for i in fig['ax'].spines.itervalues()]
+        [i.set_linewidth(border_thickness) for i in fig['ax'].spines.values()]
 
         fig['ax'].tick_params('both', direction='in', length=ticks_length, width=ticks_width, which='major')
 
