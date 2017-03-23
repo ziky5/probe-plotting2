@@ -75,7 +75,7 @@ def plot_one_line(x, y, y_errorbar=None, figsize=(15, 9), x_label='', y_label=''
 
         fig['ax'].tick_params(axis='both', which='major', labelsize=ticks_font_size)
         fig['ax'].tick_params(direction='inout', pad=pad)
-        [i.set_linewidth(border_thickness) for i in fig['ax'].spines.itervalues()]
+        [i.set_linewidth(border_thickness) for i in fig['ax'].spines.values()]
         fig['ax'].tick_params('both', direction="in", length=ticks_length, width=ticks_width, which='major')
 
         if xlabelpad:
