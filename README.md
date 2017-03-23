@@ -9,4 +9,4 @@ Clone this repo and run::
   
 # Tutorial
 
-  (Here)[https://github.com/ziky5/probe-plotting2/blob/master/tutorial.ipynb]
+  [Here](https://github.com/ziky5/probe-plotting2/blob/master/tutorial.ipynb)
